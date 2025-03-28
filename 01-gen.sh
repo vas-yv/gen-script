@@ -1,3 +1,7 @@
 #!/bin/bash
 
-Hi i am Learning Devops with Aws
+userid=$(id -u)
+
+dnf install git -y
+
+dnf install mysql -y
