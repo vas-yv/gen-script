@@ -7,10 +7,9 @@ validate(){
    then
        echo "$2..fail"
        exit 1
-    else
-        echo "$2..success"
-    fi       
-
+   else
+       echo "$2..success"
+   fi       
 }
 
 if [ $userid -ne 0 ]
