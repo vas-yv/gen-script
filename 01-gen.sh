@@ -26,6 +26,4 @@ then
     exit 1
 else
     echo " installation of mysql success"
-fi        
-
-echo "is proceeding further?"
+fi
