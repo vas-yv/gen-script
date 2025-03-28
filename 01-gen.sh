@@ -2,6 +2,12 @@
 
 userid=$(id -u)
 
+validate(){
+   echo "exit status:$1"
+   echo "what your doing:$2"
+
+}
+
 if [ $userid -ne 0 ]
 then
     echo "installation failed"
@@ -11,19 +17,8 @@ else
 fi
 
 dnf install git -y
-if [ $? -ne 0 ]
-then
-    echo "installation of git is failed"
-    exit 1
- else
-    echo "installation of git is success"
-fi       
+validate $? "installation of git"
+
 
 dnf install mysql -y
-if [ $? -ne 0 ]
-then
-    echo " installation of mysql failed"
-    exit 1
-else
-    echo " installation of mysql success"
-fi
+validate $? "installation of mysql"
