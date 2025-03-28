@@ -9,3 +9,5 @@ fi
 dnf install git -y
 
 dnf install mysql -y
+
+echo "is proceeding further?"
